@@ -1,0 +1,48 @@
+    <br>
+    <p>{{ timeLeft }} Seconds Left....</p>
+    <br>
+    <button class= "bg-blue-dark text-sm text-white font-semibold rounded px-4 py-2 hover:bg-blue : btnDisabled" [disabled]="disabled"  (click)="buttonClick()"> CLICK ME !</button>
+    <br/>
+    <div *ngIf="disabled" class="mt-5">
+      <p> You click at <strong>{{ showSeconds }}</strong>  and your color is <strong>{{ showColors }}</strong> </p>
+      <p> Check the table !</p>
+      <table class="table-fixed">
+        <thead>
+          <tr>
+            <th>Colors</th>
+            <th>Clicks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="bg-purple text-black font-bold">Purple</td>
+            <td> 23 </td>
+          </tr>
+          <tr>
+            <td class="bg-blue text-black font-bold">Blue</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td class="bg-green text-black font-bold">Green</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td class="bg-yellow text-black font-bold">Yellow</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td class="bg-orange text-black font-bold">Orange</td>
+            <td>34</td>
+          </tr>
+          <tr>
+            <td class="bg-red text-black font-bold">Red</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td class="bg-grey text-black font-bold">Grey</td>
+            <td>24</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
